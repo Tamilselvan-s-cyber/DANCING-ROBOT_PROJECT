@@ -1,0 +1,338 @@
+
+body{
+    margin: 0;
+    background-color:skyblue;
+}
+h1{
+    text-align: center;
+
+}
+.head,.left,.torso,.right,.left_leg,.right_leg,.left_arm,.right_arm{
+    background-color: blue;
+}
+.head{
+    height: 150px;
+    width: 200px;
+    border-radius:150px 150px 0 0 ;
+    margin: 0 auto;
+}
+.eyes{
+    position: relative;
+    top: 50px;
+}
+.left,.right{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+}
+.left{
+    margin-left:30px;
+
+}
+.right{
+    margin-left: 90px;
+}
+.upper_body{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    margin: 0 auto;
+}
+.torso{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+
+}
+.left_arm,.right_arm{
+    width: 40px;
+    height: 105px;
+    border-radius: 100px;
+}
+.left_arm{
+    margin-right: 10px;
+}
+.right_arm{
+    margin-left: 10px;
+}
+.lower_body{
+    width: 200px;
+    height: 120px;
+    margin: auto;
+}
+.left_leg,.right_leg{
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+}
+.left_leg{
+    margin-left: 45px;
+}
+.right_leg{
+margin-left:20px;
+}
+.robot:hover .head{
+    animation:movehead 2s infinite;
+}
+
+@keyframes movehead{
+    0%{
+        width: 200px;
+    }
+    25%{
+        width: 300px;
+    }
+    50%{
+        width: 200px;
+    }
+    75%{
+        width: 300px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+.robot:hover .torso{
+   animation: torso-body 2s infinite;
+
+}
+@keyframes torso-body{
+
+     0%{
+    transform: rotate(360deg);
+    }
+    eyframes movehead{
+        0%{
+            width: 200px;
+        }
+        25%{
+            width: 300px;
+        }
+        50%{
+            width: 200px;
+        }
+        75%{
+            width: 300px;
+        }
+        100%{
+            width: 200px;
+        }
+    }
+    .robot:hover .torso{
+       animation: torso-body 2s infinite;
+    
+    }
+    @keyframes torso-body{
+    
+        0%{
+        transform: rotate(360deg);
+        }
+        25%{
+            transform: rotate(180deg);
+            }
+        50%{
+                transform: rotate(360deg);
+                }
+                75%{
+                    transform: rotate(180deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+    }
+}
+.left_arm, .right_arm{
+    width: 40px;
+    height: 125px;
+    border-radius: 100px;
+}
+.left_arm{
+    margin-right:10px ;
+}
+.right_arm{
+    margin-left:10px ;
+}
+.lower_body{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.left_leg,.right_leg{
+    width: 40px;
+    height: 120px;
+    border-radius: 0 0 100px 100px;
+    display: inline-block;
+}
+.left_leg{
+    margin-left: 45px;
+}
+.right_leg{
+    margin-left: 30px;
+}
+.robot:hover .head{
+    animation: movehead 2s infinite;
+}
+@keyframes movehead{
+    0%{
+        width: 200px;
+    }
+    25%{
+        width: 250px;
+    }
+    50%{
+        width: 200px;
+    }
+    75%{
+        height: 150px;
+    }
+    80%{
+        width: 250px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+.robot:hover .torso{
+    animation: movetorso 2s infinite;
+}
+@keyframes movetorso{
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.robot:hover .left_arm{
+    animation: moveleft_arm 2s infinite;
+}
+@keyframes moveleft_arm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top center ;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top center ;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+
+}
+.robot:hover .left_arm{
+    animation: moveleft_arm 2s infinite;
+}
+@keyframes moveleft_arm{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top center ;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top center ;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+
+}
+.robot:hover .right_arm{
+    animation: moveright_arm 2s infinite;
+}
+@keyframes moveright_arm{
+    0%{
+        transform: rotate(360deg);
+        transform-origin: top left ;
+    }
+    25%{
+        transform: rotate(270deg);
+        transform-origin: top left ;
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: top left ;
+    }
+    75%{
+        transform: rotate(270deg);
+        transform-origin: top left ;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top left ;
+    }
+
+}
+.robot:hover .left_leg{
+    animation: moveleft_leg 2s infinite;
+}
+@keyframes moveleft_leg{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+    25%{
+        transform: rotate(90deg);
+        transform-origin: top center ;
+    }
+    50%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+    75%{
+        transform: rotate(90deg);
+        transform-origin: top center ;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: top center ;
+    }
+
+}
+.robot:hover .right_leg{
+    animation: moveright_arm 2s infinite;
+}
+@keyframes moveright_leg{
+    0%{
+        transform: rotate(360deg);
+        transform-origin: top left ;
+    }
+    25%{
+        transform: rotate(270deg);
+        transform-origin: top left ;
+    }
+    50%{
+        transform: rotate(360deg);
+        transform-origin: top left ;
+    }
+    75%{
+        transform: rotate(270deg);
+        transform-origin: top left ;
+    }
+    100%{
+        transform: rotate(360deg);
+        transform-origin: top left ;
+    }
+
+}
